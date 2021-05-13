@@ -1,6 +1,5 @@
 <script>
-    import Stylesheet from "$lib/Stylesheet.svelte";
+    import "../tailwind.css";
 </script>
 
-<Stylesheet />
 <slot />

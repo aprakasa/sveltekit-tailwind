@@ -1,11 +1,6 @@
-const production = process.env.NODE_ENV === "production"
-
 module.exports = {
   mode: 'jit',
-  purge: {
-    content: ["./src/**/*.{html,js,svelte,ts}"],
-    enabled: production,
-  },
+  purge: ["./src/**/*.{html,js,svelte,ts}"],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {},
