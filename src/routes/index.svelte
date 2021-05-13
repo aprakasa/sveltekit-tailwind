@@ -23,7 +23,7 @@
     <div class="text-center p-8">
         <h1 class="text-6xl font-bold uppercase mb-8">Welcome to SvelteKit</h1>
         <p class="mb-4">
-            Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the
+            Visit <a href="https://kit.svelte.dev" class="underline">kit.svelte.dev</a> to read the
             documentation
         </p>
 
