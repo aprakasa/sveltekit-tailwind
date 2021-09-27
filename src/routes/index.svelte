@@ -10,7 +10,6 @@
         classList.remove(theme);
         theme = theme === "light" ? "dark" : "light";
         classList.add(theme);
-        on;
         try {
             localStorage.theme = theme;
         } catch (e) {
