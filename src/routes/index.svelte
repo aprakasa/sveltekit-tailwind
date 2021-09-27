@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>SvelteKit ♥ Tailwindcss</title>
+</svelte:head>
+
 <script>
     let theme = "light";
     try {
