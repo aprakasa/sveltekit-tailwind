@@ -2,23 +2,17 @@
   "name": "sveltekit-tailwindcss",
   "version": "0.0.1",
   "scripts": {
-    "dev": "concurrently \"npm:dev:*\"",
-    "dev:kit": "svelte-kit dev",
-    "dev:css": "cross-env TAILWIND_MODE=watch tailwindcss -i ./src/tailwind.css -c ./tailwind.config.cjs -o ./src/global.css -w",
-    "build": "concurrently \"npm:build:*\"",
-    "build:kit": "svelte-kit build",
-    "build:css": "cross-env NODE_ENV=production tailwindcss -i ./src/tailwind.css -c ./tailwind.config.cjs -o ./src/global.css --minify",
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
     "preview": "svelte-kit preview"
   },
   "devDependencies": {
-    "@sveltejs/adapter-netlify": "^1.0.0-next.20",
+    "@sveltejs/adapter-netlify": "^1.0.0-next.31",
     "@sveltejs/kit": "next",
-    "autoprefixer": "^10.3.0",
-    "concurrently": "^6.2.0",
-    "cross-env": "^7.0.3",
-    "postcss": "^8.3.5",
-    "svelte": "^3.38.3",
-    "tailwindcss": "^2.2.4"
+    "autoprefixer": "^10.3.6",
+    "postcss": "^8.3.8",
+    "svelte": "^3.43.0",
+    "tailwindcss": "^2.2.16"
   },
   "type": "module"
 }

@@ -1,5 +1,5 @@
 <script>
-    import "../global.css";
+    import "../tailwind.css";
 </script>
 
 <slot />
