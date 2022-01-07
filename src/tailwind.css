@@ -1,10 +1,6 @@
 @tailwind base;
-::-moz-selection {
-    @apply bg-red-500 text-white;
-}
-
 ::selection {
-    @apply bg-red-500 text-white;
+  @apply bg-purple-500 text-white;
 }
 @tailwind components;
 @tailwind utilities;

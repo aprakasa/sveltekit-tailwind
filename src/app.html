@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" class="antialased">
-
-<head>
-	<meta charset="utf-8" />
-	<link rel="icon" href="/favicon.ico" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<script>
-		try {
-			if (!localStorage.theme) {
-				localStorage.theme = window.matchMedia('(prefers-color-scheme: dark)').matches
-					? 'dark'
-					: 'light';
-			}
-			document.documentElement.classList.add(localStorage.theme);
-		} catch (e) {
-			console.error(e);
-		}
-	</script>
-	%svelte.head%
-</head>
-
-<body class="bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
-	<div id="svelte">%svelte.body%</div>
-</body>
-
+<html lang="en" class="antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      try {
+        if (!localStorage.theme) {
+          localStorage.theme = window.matchMedia("(prefers-color-scheme: dark)")
+            .matches
+            ? "dark"
+            : "light";
+        }
+        document.documentElement.classList.add(localStorage.theme);
+      } catch (e) {
+        console.error(e);
+      }
+    </script>
+    %svelte.head%
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-gray-700 dark:text-gray-300">
+    <div id="svelte">%svelte.body%</div>
+  </body>
 </html>
